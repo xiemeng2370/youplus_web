@@ -25,6 +25,7 @@
         <link rel="stylesheet" href="assets/css/animate.css">
         <link rel="stylesheet" href="assets/css/magnific-popup.css">
         <link rel="stylesheet" href="assets/css/odometer-theme-default.css">
+        <link rel="stylesheet" href="assets/css/tilteffect.css">
         <script>
         window.odometerOptions = {
           selector: '.odometer',
@@ -159,28 +160,86 @@
             </div>
         </header>
 
-        <!-- How Does It Works -->
-        <section id="how">
+        <!-- How Does It Works for width 1024px and up -->
+        <section id="how" class="visible-md visible-lg">
+            <div class="container">
+                <h2 align="center">HOW DOES IT WORK</h2>
+                <div class="row how">
+                    <div class="col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                        <ul class="grid grid--examples">
+                            <li class="grid__item">
+                                <div class="grid__img grid__img--example-4">
+                                    <img src="images/how1.jpg" class="tilt-effect" alt="grid04"  data-tilt-options='{ "opacity" : 0.8, "bgfixed" : false, "extraImgs" : 3, "movement": { "perspective" : 1500, "translateX" : 80, "translateY" : 80, "translateZ" : 0, "rotateY" : 20 } }' />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 wow bounceInRight how-text-right" data-wow-delay="100ms">
+                        <h3>SELECT</h3>
+                        <h5>Free Offers</h5>
+                        <hr align="left">
+                        <p>Select the item you’d like to get for free from Youplus mobile app.</p>
+                    </div>
+                </div>
+                <div class="row how">
+                    <div class="col-md-6 wow bounceInLeft how-text-left" data-wow-delay="500ms">
+                        <h3>PRESENT</h3>
+                        <h5>Youplus App</h5>
+                        <hr align="right">
+                        <p>Go to the address in your reward and present our app to the cashier.</p>
+                    </div>
+                    <div class="col-md-6 wow fadeInUp" data-wow-delay="500ms">
+                        <ul class="grid grid--examples">
+                            <li class="grid__item">
+                                <div class="grid__img grid__img--example-4">
+                                    <img src="images/how2.jpg" class="tilt-effect" alt="grid04"  data-tilt-options='{ "opacity" : 0.8, "bgfixed" : false, "extraImgs" : 3, "movement": { "perspective" : 1500, "translateX" : 80, "translateY" : 80, "translateZ" : 0, "rotateY" : 20 } }' />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row how">
+                    <div class="col-md-6 wow fadeInUp" data-wow-delay="800ms">
+                        <ul class="grid grid--examples">
+                            <li class="grid__item">
+                                <div class="grid__img grid__img--example-4">
+                                    <img src="images/how3.jpg" class="tilt-effect" alt="grid04"  data-tilt-options='{ "opacity" : 0.8, "bgfixed" : false, "extraImgs" : 3, "movement": { "perspective" : 1500, "translateX" : 80, "translateY" : 80, "translateZ" : 0, "rotateY" : 20 } }' />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 wow bounceInRight how-text-right" data-wow-delay="800ms">
+                        <h3>ENJOY</h3>
+                        <h5>Your Choice</h5>
+                        <hr align="left">
+                        <p>Voila! Pick up your reward or enjoy the service. Don’t forget to like us on Facebook!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How Does It Works for width smaller than 1024px-->
+        <section id="how" class="visible-xs visible-sm">
             <div class="container">
                 <div class="row features">
                     <h2 align="center">HOW DOES IT WORK</h2>
-                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="100ms">
-                        <img src="images/how1_slow.gif" class="img-responsive"/>
-                        <h3>CHOOSE</h3>
-                        <h5>Your Offer</h5>
-                        <p>Select the item you’d like to get for free from Youplus app.</p>
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="100ms">
+                        <img src="images/how1.jpg" class="img-responsive"/>
+                        <h3>SELECT</h3>
+                        <h5>Free Offers</h5>
+                        <p>Select the item you’d like to get for free from Youplus mobile app.</p>
                     </div>
-                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="300ms">
-                        <img src="images/how2V2.jpg" class="img-responsive"/>
-                        <h3>REDEEM</h3>
-                        <h5>At the Store</h5>
-                        <p>Go to the address and present our app to the cashier.</p>
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="300ms">
+                        <img src="images/how2.jpg" class="img-responsive"/>
+                        <h3>PRESENT</h3>
+                        <h5>Youplus App</h5>
+                        <p>Go to the address in your reward and present our app to the cashier.</p>
                     </div>
-                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="500ms">
-                        <img src="images/how3V2.jpg" class="img-responsive"/>
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="500ms">
+                        <img src="images/how3.jpg" class="img-responsive"/>
                         <h3>ENJOY</h3>
                         <h5>Your Choice</h5>
-                        <p>Voila! Pick up your reward or enjoy the service 100% free.</p>
+                        <p>Voila! Pick up your reward or enjoy the service. Don’t forget to like us on Facebook!</p>
                     </div>
                 </div>
             </div>
@@ -316,7 +375,7 @@
         <script src="assets/js/wow.min.js"></script>
         <script src="assets/js/scripts.js"></script>
         <script src="assets/js/odometer.js"></script>
-
+        <script src="assets/js/tiltfx.js"></script>
     </body>
 </html>
 

@@ -28,8 +28,6 @@ h4
     font-size: 2em;
     color: #fff;
 }
-
-.features,
 .blog,
 .gallery,
 .clients,
@@ -38,7 +36,6 @@ h4
     padding-top: 6em;
     padding-bottom: 7em;
 }
-
 span.typcn::before, i.typcn::before
 {
     font-size: 2em;
@@ -469,8 +466,12 @@ input[type="text"]
 /*------------------------------------*\
 	SECTIONS
 \*------------------------------------*/
+#how .container{
+    padding-top: 6em;
+    padding-bottom: 7em;
+}
+
 #how p{
-    text-align: left;
     color: #8b8b8b;
     font-size: 1.2em; 
     line-height: 1.5; 
@@ -478,16 +479,33 @@ input[type="text"]
     font-weight: lighter;
 }
 #how h3{
-    text-align: left;
     font-family: "Raleway";
     font-weight: bold;
     margin-bottom: 0em;
     margin-top: 1em;
 }
 #how h5{
-    text-align: left;
     font-family: "raleway";
 }
+#how .col-md-6{
+    padding:0;
+}
+#how .how-text-right{
+    padding: 5%;
+    text-align: left;
+}
+#how .how-text-left{
+    padding: 5%;
+    text-align: right;
+}
+#how hr {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border: 0;
+    width: 50px;
+    border-top: 3px solid #ccc;
+}
+
 
 .offer-redeemed-number
 {
@@ -569,6 +587,18 @@ img.download-button
 .prefooter p
 {
     color: #FFFFFF;
+}
+
+@media screen and (min-width:768px) and (max-width:1200px){
+
+    #how .how-text-right{
+        padding: 3%;
+        padding-left: 5%;
+    }
+    #how .how-text-left{
+        padding: 3%;
+        padding-right: 5%;
+    }
 }
 
 @media only screen and (max-width: 992px)
@@ -767,4 +797,3 @@ footer i
         margin: 0;
     }
 }
-
